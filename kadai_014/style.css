@@ -1,20 +1,42 @@
+/* ----------------------------------------------------------------------------
+  文字カラー
+ ---------------------------------------------------------------------------- */
+
+
 .text-skyblue{
     color: skyblue;
 }
 .text-pink{
     color:rgb(255, 192, 203) ;
 }
+
+/* ----------------------------------------------------------------------------
+  共通
+ ---------------------------------------------------------------------------- */
+
+ html {
+    font-size: 20px;
+}
+
 body {
+
 text-align: center;
-font-family: "Arial", "Meiryo", sans-serif,sans-serif;
-font-size: 20px;
+font-family: "Arial", "Meiryo", sans-serif;
 }
+
+/* ----------------------------------------------------------------------------
+  マイプロフィール
+ ---------------------------------------------------------------------------- */
+
+
 h1{
-    border-bottom: solid 3px rgb(115, 115, 114);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
     letter-spacing: 1.2em;
-    text-shadow: 3px 3px 4px gray;
-    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 3px 3px 2px rgb(221, 221, 213);
+    border-bottom: solid 3px rgb(115, 115, 114);
 }
+
 
 div p{
     font-weight: bold;
