@@ -1,73 +1,106 @@
 h1 {
-    margin: 0px;
-    color: rgb(255,255,255);
+    margin: 0;
 }
+
 p {
-    margin: 0px;
+    margin: 0;
     font-size: 20px;
 }
+
 body {
-    margin: 0px;
+    margin: 0;
 }
+
 a {
     font-size: 20px;
 }
-header{
+
+header {
     margin-bottom: 20px;
     background-color: rgb(244,79,79);
     text-align: center;
+
 }
+
 main {
     margin: 10px;
+
 }
+
+img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
 #parent {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-between;
 }
+
 .contents {
     border: 3px solid rgb(238,204,204);
     flex-basis: 25%;
     padding: 10px 15px;
-    margin: 20px 0px;
-    text-align: center;
-}
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
 h2 {
     font-size: 25px;
     border-bottom: 3px dotted rgb(236,122,122);
+    position: relative;
+    width: 100%;
+    text-align: center;
 }
 h2::before {
-    content: "⚫︎";
-    color: rgb(236,122,122);
+    content: "●";
+    color: rgb(239,111,139);
 }
+
 .contents p:nth-of-type(2)::first-letter {
     font-weight: bold;
     color: rgb(97,206,249);
 }
-.contents img {
-    margin: 10px 0px;
-    width: 70%;
-}
+
 footer {
     background-color: rgb(244,79,79);
     text-align: center;
+    padding: 10px 0;
 }
-a {
+ 
+footer a:link {
     color: rgb(255,255,255);
+    text-decoration: none;
 }
-a:visited {
-    color: rgb(193,234,251);
+
+footer a:visited {
+    color: rgb(193,234,251)
 }
-a:hover {
+
+footer a:hover {
     color: rgb(245,178,168);
 }
-@media screen and (max-width:768px) {
-h2 {
-    font-size: 30px;
-}
-p {
-    font-size: 25px;
-}
-#parent {
-    flex-direction: column;
-}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 25px;
+    }
+    #parent {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .contents {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
 }
